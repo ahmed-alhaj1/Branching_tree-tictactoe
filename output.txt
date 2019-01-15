@@ -1,0 +1,974 @@
+Script started on Tue 15 Jan 2019 05:38:51 PM EST
+]0;ahmed@ahmed-ThinkPad-T510: ~/341projs/Branching_tree-tictactoe[01;32mahmed@ahmed-ThinkPad-T510[00m:[01;34m~/341projs/Branching_tree-tictactoe[00m$ ./run1.o [K[K[K[K[K[K[K[K[KG=[K[Kg++ -Wall Board.h Board.cpp H[KNode.h Node.cppp README.md [K[K[K[K[K[K[K[K[K[Kdriver.cpp -o rnu1[K[K[Kun1.o
+[01m[KBoard.h:15:20:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  const char p1  =  'X';
+[01;32m[K                    ^[m[K
+[01m[KBoard.h:16:20:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  const char p2  =  'O';
+[01;32m[K                    ^[m[K
+[01m[KBoard.h:17:15:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  char empty = ' ';
+[01;32m[K               ^[m[K
+[01m[KBoard.h:18:17:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  const int pr1 =1;
+[01;32m[K                 ^[m[K
+[01m[KBoard.h:19:17:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  const int pr2 =2;
+[01;32m[K                 ^[m[K
+In file included from [01m[KBoard.cpp:1:0[m[K:
+[01m[KBoard.h:15:20:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  const char p1  =  'X';
+[01;32m[K                    ^[m[K
+[01m[KBoard.h:16:20:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  const char p2  =  'O';
+[01;32m[K                    ^[m[K
+[01m[KBoard.h:17:15:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  char empty = ' ';
+[01;32m[K               ^[m[K
+[01m[KBoard.h:18:17:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  const int pr1 =1;
+[01;32m[K                 ^[m[K
+[01m[KBoard.h:19:17:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  const int pr2 =2;
+[01;32m[K                 ^[m[K
+[01m[KBoard.cpp:[m[K In member function ‘[01m[Kconst Board& Board::operator=(Board&)[m[K’:
+[01m[KBoard.cpp:63:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [-Wreturn-type]
+ } 
+[01;32m[K ^[m[K
+[01m[KBoard.cpp:[m[K In member function ‘[01m[Kint Board::getNewPos()[m[K’:
+[01m[KBoard.cpp:184:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [-Wreturn-type]
+ }
+[01;32m[K ^[m[K
+[01m[KBoard.cpp:[m[K In member function ‘[01m[Kint Board::check_win()[m[K’:
+[01m[KBoard.cpp:360:47:[m[K [01;35m[Kwarning: [m[Koperation on ‘[01m[Kprev1[m[K’ may be undefined [-Wsequence-point]
+   prev1= (board[i][j] ==p1) ? ++prev1 : prev1 ;
+[01;32m[K                                               ^[m[K
+[01m[KBoard.cpp:363:46:[m[K [01;35m[Kwarning: [m[Koperation on ‘[01m[Kprev2[m[K’ may be undefined [-Wsequence-point]
+   prev2 = (board[i][j]== p2)? ++prev2 : prev2;
+[01;32m[K                                              ^[m[K
+[01m[KBoard.cpp:369:41:[m[K [01;35m[Kwarning: [m[Koperation on ‘[01m[Kpv1[m[K’ may be undefined [-Wsequence-point]
+   pv1= (board[i][j] ==p1) ? ++pv1 : pv1 ;
+[01;32m[K                                         ^[m[K
+[01m[KBoard.cpp:372:40:[m[K [01;35m[Kwarning: [m[Koperation on ‘[01m[Kpv2[m[K’ may be undefined [-Wsequence-point]
+   pv2 = (board[i][j]== p2)? ++pv2 : pv2;
+[01;32m[K                                        ^[m[K
+[01m[KBoard.cpp:[m[K In member function ‘[01m[Kvoid Board::print_win_msg(int)[m[K’:
+[01m[KBoard.cpp:390:20:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects a matching ‘[01m[Kint[m[K’ argument [-Wformat=]
+   printf("pr = %d ");
+[01;32m[K                    ^[m[K
+[01m[KBoard.cpp:[m[K In member function ‘[01m[Kstd::pair<int, int> Board::dissolve_pos(int)[m[K’:
+[01m[KBoard.cpp:161:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [-Wreturn-type]
+ }
+[01;32m[K ^[m[K
+[01m[KBoard.cpp:[m[K In member function ‘[01m[Kint Board::combine_pos(std::pair<int, int>)[m[K’:
+[01m[KBoard.cpp:175:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [-Wreturn-type]
+ }
+[01;32m[K ^[m[K
+In file included from [01m[KNode.h:5:0[m[K:
+[01m[KBoard.h:15:20:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  const char p1  =  'X';
+[01;32m[K                    ^[m[K
+[01m[KBoard.h:16:20:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  const char p2  =  'O';
+[01;32m[K                    ^[m[K
+[01m[KBoard.h:17:15:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  char empty = ' ';
+[01;32m[K               ^[m[K
+[01m[KBoard.h:18:17:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  const int pr1 =1;
+[01;32m[K                 ^[m[K
+[01m[KBoard.h:19:17:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  const int pr2 =2;
+[01;32m[K                 ^[m[K
+In file included from [01m[KNode.h:5:0[m[K,
+                 from [01m[KNode.cpp:2[m[K:
+[01m[KBoard.h:15:20:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  const char p1  =  'X';
+[01;32m[K                    ^[m[K
+[01m[KBoard.h:16:20:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  const char p2  =  'O';
+[01;32m[K                    ^[m[K
+[01m[KBoard.h:17:15:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  char empty = ' ';
+[01;32m[K               ^[m[K
+[01m[KBoard.h:18:17:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  const int pr1 =1;
+[01;32m[K                 ^[m[K
+[01m[KBoard.h:19:17:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  const int pr2 =2;
+[01;32m[K                 ^[m[K
+[01m[KNode.cpp:[m[K In function ‘[01m[Kstd::ostream& operator<<(std::ostream&, const Point&)[m[K’:
+[01m[KNode.cpp:29:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [-Wreturn-type]
+ }
+[01;32m[K ^[m[K
+[01m[KNode.cpp:[m[K In constructor ‘[01m[KMove::Move()[m[K’:
+[01m[KNode.cpp:38:2:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [-Wunused-value]
+  m_pos ;
+[01;32m[K  ^[m[K
+[01m[KNode.cpp:[m[K In member function ‘[01m[KMove Move::operator=(Move&)[m[K’:
+[01m[KNode.cpp:44:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [-Wreturn-type]
+ }
+[01;32m[K ^[m[K
+[01m[KNode.cpp:[m[K In constructor ‘[01m[KState::State()[m[K’:
+[01m[KNode.cpp:62:2:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [-Wunused-value]
+  m_board;
+[01;32m[K  ^[m[K
+[01m[KNode.cpp:63:2:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [-Wunused-value]
+  possible_moves;
+[01;32m[K  ^[m[K
+[01m[KNode.cpp:[m[K In member function ‘[01m[Kconst State& State::operator=(State&)[m[K’:
+[01m[KNode.cpp:86:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [-Wreturn-type]
+ }
+[01;32m[K ^[m[K
+[01m[KNode.cpp:[m[K In constructor ‘[01m[KNode::Node()[m[K’:
+[01m[KNode.cpp:127:2:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [-Wunused-value]
+  m_state;
+[01;32m[K  ^[m[K
+[01m[KNode.cpp:128:2:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [-Wunused-value]
+  m_move;
+[01;32m[K  ^[m[K
+[01m[KNode.cpp:[m[K In constructor ‘[01m[KNode::Node(State)[m[K’:
+[01m[KNode.cpp:136:3:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [-Wunused-value]
+   m_move ;
+[01;32m[K   ^[m[K
+In file included from [01m[KNode.h:5:0[m[K,
+                 from [01m[Kdriver.cpp:2[m[K:
+[01m[KBoard.h:15:20:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  const char p1  =  'X';
+[01;32m[K                    ^[m[K
+[01m[KBoard.h:16:20:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  const char p2  =  'O';
+[01;32m[K                    ^[m[K
+[01m[KBoard.h:17:15:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  char empty = ' ';
+[01;32m[K               ^[m[K
+[01m[KBoard.h:18:17:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  const int pr1 =1;
+[01;32m[K                 ^[m[K
+[01m[KBoard.h:19:17:[m[K [01;35m[Kwarning: [m[Knon-static data member initializers only available with -std=c++11 or -std=gnu++11
+  const int pr2 =2;
+[01;32m[K                 ^[m[K
+[01m[Kdriver.cpp:[m[K In function ‘[01m[Kint simulate(Board&)[m[K’:
+[01m[Kdriver.cpp:27:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ki[m[K’ [-Wunused-variable]
+  int i =0;
+[01;32m[K      ^[m[K
+[01m[Kdriver.cpp:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Kdriver.cpp:166:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kroot[m[K’ [-Wunused-variable]
+  Node *root = new Node(state);
+[01;32m[K        ^[m[K
+]0;ahmed@ahmed-ThinkPad-T510: ~/341projs/Branching_tree-tictactoe[01;32mahmed@ahmed-ThinkPad-T510[00m:[01;34m~/341projs/Branching_tree-tictactoe[00m$ ./run1.o 
+you have made it congrat 
+I am at initialze the state
+board is fine 
+-1 -1
+##### Weclome to the TicToeTac world #####
+-------------
+|   |   |   | 
+|   |   |   | 
+|   |   |   | 
+-------------
+player 1 please enter the postion to place into 
+3
+-------------
+|   |   | X | 
+|   |   |   | 
+|   |   |   | 
+-------------
+res = 0 
+I am about to simulate
+I am at initialze the state
+board is fine 
+-1 -1
+######### Start expansion Simulation  ###########
+_____I am initilaize m_branches ____
+I am at available moves 
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   | X | 
+|   |   |   | 
+|   |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+|   | O | X | 
+|   |   |   | 
+|   |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+|   |   | X | 
+| O |   |   | 
+|   |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+|   |   | X | 
+|   | O |   | 
+|   |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+|   |   | X | 
+|   |   | O | 
+|   |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+|   |   | X | 
+|   |   |   | 
+| O |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+|   |   | X | 
+|   |   |   | 
+|   | O |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+|   |   | X | 
+|   |   |   | 
+|   |   | O | 
+-------------
+######### end expansion simulation ############# 
+####### things are alright ###### 
+-------------
+| O |   | X | 
+|   |   |   | 
+|   |   |   | 
+-------------
+res = 0 
+player 1 please enter the postion to place into 
+5
+-------------
+| O |   | X | 
+|   | X |   | 
+|   |   |   | 
+-------------
+res = 0 
+I am about to simulate
+I am at initialze the state
+board is fine 
+-1 -1
+######### Start expansion Simulation  ###########
+_____I am initilaize m_branches ____
+I am at available moves 
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O | O | X | 
+|   | X |   | 
+|   |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   | X | 
+| O | X |   | 
+|   |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   | X | 
+|   | X | O | 
+|   |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   | X | 
+|   | X |   | 
+| O |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   | X | 
+|   | X |   | 
+|   | O |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   | X | 
+|   | X |   | 
+|   |   | O | 
+-------------
+######### end expansion simulation ############# 
+####### things are alright ###### 
+-------------
+| O |   | X | 
+|   | X |   | 
+| O |   |   | 
+-------------
+res = 0 
+player 1 please enter the postion to place into 
+4
+-------------
+| O |   | X | 
+| X | X |   | 
+| O |   |   | 
+-------------
+res = 0 
+I am about to simulate
+I am at initialze the state
+board is fine 
+-1 -1
+######### Start expansion Simulation  ###########
+_____I am initilaize m_branches ____
+I am at available moves 
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O | O | X | 
+| X | X |   | 
+| O |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   | X | 
+| X | X | O | 
+| O |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   | X | 
+| X | X |   | 
+| O | O |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   | X | 
+| X | X |   | 
+| O |   | O | 
+-------------
+######### end expansion simulation ############# 
+####### things are alright ###### 
+-------------
+| O |   | X | 
+| X | X | O | 
+| O |   |   | 
+-------------
+res = 0 
+player 1 please enter the postion to place into 
+2
+-------------
+| O | X | X | 
+| X | X | O | 
+| O |   |   | 
+-------------
+res = 0 
+I am about to simulate
+I am at initialze the state
+board is fine 
+-1 -1
+######### Start expansion Simulation  ###########
+_____I am initilaize m_branches ____
+I am at available moves 
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O | X | X | 
+| X | X | O | 
+| O | O |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O | X | X | 
+| X | X | O | 
+| O |   | O | 
+-------------
+######### end expansion simulation ############# 
+####### things are alright ###### 
+-------------
+| O | X | X | 
+| X | X | O | 
+| O | O |   | 
+-------------
+resul is a draw. there is no winner both u all sucks 
+-------------
+|   |   |   | 
+|   |   |   | 
+|   |   |   | 
+-------------
+]0;ahmed@ahmed-ThinkPad-T510: ~/341projs/Branching_tree-tictactoe[01;32mahmed@ahmed-ThinkPad-T510[00m:[01;34m~/341projs/Branching_tree-tictactoe[00m$ ./4`[K[Krun1.o 
+you have made it congrat 
+I am at initialze the state
+board is fine 
+-1 -1
+##### Weclome to the TicToeTac world #####
+-------------
+|   |   |   | 
+|   |   |   | 
+|   |   |   | 
+-------------
+player 1 please enter the postion to place into 
+4
+-------------
+|   |   |   | 
+| X |   |   | 
+|   |   |   | 
+-------------
+res = 0 
+I am about to simulate
+I am at initialze the state
+board is fine 
+-1 -1
+######### Start expansion Simulation  ###########
+_____I am initilaize m_branches ____
+I am at available moves 
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   |   | 
+| X |   |   | 
+|   |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+|   | O |   | 
+| X |   |   | 
+|   |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+|   |   | O | 
+| X |   |   | 
+|   |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+|   |   |   | 
+| X | O |   | 
+|   |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+|   |   |   | 
+| X |   | O | 
+|   |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+|   |   |   | 
+| X |   |   | 
+| O |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+|   |   |   | 
+| X |   |   | 
+|   | O |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+|   |   |   | 
+| X |   |   | 
+|   |   | O | 
+-------------
+######### end expansion simulation ############# 
+####### things are alright ###### 
+-------------
+| O |   |   | 
+| X |   |   | 
+|   |   |   | 
+-------------
+res = 0 
+player 1 please enter the postion to place into 
+6
+-------------
+| O |   |   | 
+| X |   | X | 
+|   |   |   | 
+-------------
+res = 0 
+I am about to simulate
+I am at initialze the state
+board is fine 
+-1 -1
+######### Start expansion Simulation  ###########
+_____I am initilaize m_branches ____
+I am at available moves 
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O | O |   | 
+| X |   | X | 
+|   |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   | O | 
+| X |   | X | 
+|   |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   |   | 
+| X | O | X | 
+|   |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   |   | 
+| X |   | X | 
+| O |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   |   | 
+| X |   | X | 
+|   | O |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   |   | 
+| X |   | X | 
+|   |   | O | 
+-------------
+######### end expansion simulation ############# 
+####### things are alright ###### 
+-------------
+| O |   |   | 
+| X | O | X | 
+|   |   |   | 
+-------------
+res = 0 
+player 1 please enter the postion to place into 
+7 7
+-------------
+| O |   |   | 
+| X | O | X | 
+| X |   |   | 
+-------------
+res = 0 
+I am about to simulate
+I am at initialze the state
+board is fine 
+-1 -1
+######### Start expansion Simulation  ###########
+_____I am initilaize m_branches ____
+I am at available moves 
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O | O |   | 
+| X | O | X | 
+| X |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   | O | 
+| X | O | X | 
+| X |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   |   | 
+| X | O | X | 
+| X | O |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   |   | 
+| X | O | X | 
+| X |   | O | 
+-------------
+######### end expansion simulation ############# 
+####### things are alright ###### 
+-------------
+| O | O |   | 
+| X | O | X | 
+| X |   |   | 
+-------------
+res = 0 
+player 1 please enter the postion to place into 
+3
+-------------
+| O | O | X | 
+| X | O | X | 
+| X |   |   | 
+-------------
+res = 0 
+I am about to simulate
+I am at initialze the state
+board is fine 
+-1 -1
+######### Start expansion Simulation  ###########
+_____I am initilaize m_branches ____
+I am at available moves 
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O | O | X | 
+| X | O | X | 
+| X | O |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O | O | X | 
+| X | O | X | 
+| X |   | O | 
+-------------
+######### end expansion simulation ############# 
+####### things are alright ###### 
+-------------
+| O | O | X | 
+| X | O | X | 
+| X |   | O | 
+-------------
+res = 2 
+res = 2 
+pr = 2 congratulation player 2 u made it 
+-------------
+|   |   |   | 
+|   |   |   | 
+|   |   |   | 
+-------------
+]0;ahmed@ahmed-ThinkPad-T510: ~/341projs/Branching_tree-tictactoe[01;32mahmed@ahmed-ThinkPad-T510[00m:[01;34m~/341projs/Branching_tree-tictactoe[00m$ /r[K[K./run1.o 
+you have made it congrat 
+I am at initialze the state
+board is fine 
+-1 -1
+##### Weclome to the TicToeTac world #####
+-------------
+|   |   |   | 
+|   |   |   | 
+|   |   |   | 
+-------------
+player 1 please enter the postion to place into 
+5
+-------------
+|   |   |   | 
+|   | X |   | 
+|   |   |   | 
+-------------
+res = 0 
+I am about to simulate
+I am at initialze the state
+board is fine 
+-1 -1
+######### Start expansion Simulation  ###########
+_____I am initilaize m_branches ____
+I am at available moves 
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   |   | 
+|   | X |   | 
+|   |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+|   | O |   | 
+|   | X |   | 
+|   |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+|   |   | O | 
+|   | X |   | 
+|   |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+|   |   |   | 
+| O | X |   | 
+|   |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+|   |   |   | 
+|   | X | O | 
+|   |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+|   |   |   | 
+|   | X |   | 
+| O |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+|   |   |   | 
+|   | X |   | 
+|   | O |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+|   |   |   | 
+|   | X |   | 
+|   |   | O | 
+-------------
+######### end expansion simulation ############# 
+####### things are alright ###### 
+-------------
+| O |   |   | 
+|   | X |   | 
+|   |   |   | 
+-------------
+res = 0 
+player 1 please enter the postion to place into 
+7
+-------------
+| O |   |   | 
+|   | X |   | 
+| X |   |   | 
+-------------
+res = 0 
+I am about to simulate
+I am at initialze the state
+board is fine 
+-1 -1
+######### Start expansion Simulation  ###########
+_____I am initilaize m_branches ____
+I am at available moves 
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O | O |   | 
+|   | X |   | 
+| X |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   | O | 
+|   | X |   | 
+| X |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   |   | 
+| O | X |   | 
+| X |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   |   | 
+|   | X | O | 
+| X |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   |   | 
+|   | X |   | 
+| X | O |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   |   | 
+|   | X |   | 
+| X |   | O | 
+-------------
+######### end expansion simulation ############# 
+####### things are alright ###### 
+-------------
+| O |   | O | 
+|   | X |   | 
+| X |   |   | 
+-------------
+res = 0 
+player 1 please enter the postion to place into 
+3
+player 1 please enter the postion to place into 
+4
+-------------
+| O |   | O | 
+| X | X |   | 
+| X |   |   | 
+-------------
+res = 0 
+I am about to simulate
+I am at initialze the state
+board is fine 
+-1 -1
+######### Start expansion Simulation  ###########
+_____I am initilaize m_branches ____
+I am at available moves 
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O | O | O | 
+| X | X |   | 
+| X |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   | O | 
+| X | X | O | 
+| X |   |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   | O | 
+| X | X |   | 
+| X | O |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   | O | 
+| X | X |   | 
+| X |   | O | 
+-------------
+######### end expansion simulation ############# 
+####### things are alright ###### 
+-------------
+| O |   | O | 
+| X | X | O | 
+| X |   |   | 
+-------------
+res = 0 
+player 1 please enter the postion to place into 
+8
+-------------
+| O |   | O | 
+| X | X | O | 
+| X | X |   | 
+-------------
+res = 0 
+I am about to simulate
+I am at initialze the state
+board is fine 
+-1 -1
+######### Start expansion Simulation  ###########
+_____I am initilaize m_branches ____
+I am at available moves 
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O | O | O | 
+| X | X | O | 
+| X | X |   | 
+-------------
+I am at initialze the state
+board is fine 
+-1 -1
+-------------
+| O |   | O | 
+| X | X | O | 
+| X | X | O | 
+-------------
+######### end expansion simulation ############# 
+####### things are alright ###### 
+things still alright 2 
+2
+-------------
+| O | O | O | 
+| X | X | O | 
+| X | X |   | 
+-------------
+res = 2 
+res = 2 
+pr = 2 congratulation player 2 u made it 
+-------------
+|   |   |   | 
+|   |   |   | 
+|   |   |   | 
+-------------
+]0;ahmed@ahmed-ThinkPad-T510: ~/341projs/Branching_tree-tictactoe[01;32mahmed@ahmed-ThinkPad-T510[00m:[01;34m~/341projs/Branching_tree-tictactoe[00m$ exit
+exit
+
+Script done on Tue 15 Jan 2019 05:40:55 PM EST

@@ -147,6 +147,7 @@ Move Node::get_move(){
 
 	}
 void Node::initialize_branches(){
+		cout <<"######### Start expansion Simulation  ###########" << endl;
 		cout <<"_____I am initilaize m_branches ____" << endl;
 		vector<Point> *pss_moves = new vector<Point>();
 		 pss_moves = m_state.available_moves();
@@ -166,6 +167,7 @@ void Node::initialize_branches(){
 			curr->m_state.dump();
 			m_branches->push_back(curr);
 		}
+	cout <<"######### end expansion simulation ############# " <<endl;
 }
 
 //int Node::find_best_move(){
